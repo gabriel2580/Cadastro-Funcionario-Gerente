@@ -16,7 +16,7 @@ public class JavaApplication1 {
         
         //Cria um gerente
         Gerente g = new Gerente();
-        g.setNome("Daniel");
+        g.setNome("    Daniel    ");
         g.setCpf("45869812310");
         g.setNumFuncGerenciados(10);
         
@@ -30,6 +30,7 @@ public class JavaApplication1 {
         System.out.println("Nome: "+g.getNome());
         System.out.println("CPF: "+g.getCpf());
         System.out.println("Número funcionários: "+g.getNumFuncGerenciados());
+        System.out.println("Nome maiúsculo: "+g.nomeMaiusculo());
         
         Funcionario gerenteTeste = g;
         System.out.println("-------------------");

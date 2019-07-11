@@ -15,7 +15,8 @@ abstract class Pessoa implements PessoaInterface {
 
     @Override
     public String cpfFormatado() {
-        return this.cpf;
+        
+        return this.cpfFormatado;
     }
 
     @Override
