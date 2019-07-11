@@ -6,6 +6,8 @@ abstract class Pessoa implements PessoaInterface {
     protected String endereco;
     protected String bairro;
     protected String cpf;
+    
+    
 
     @Override
     public String enderecoCompleto() {
@@ -16,7 +18,9 @@ abstract class Pessoa implements PessoaInterface {
     @Override
     public String cpfFormatado() {
         
-        return this.cpfFormatado;
+        String cpfFormatado = cpf.substring(0, 3) + "." + cpf.substring(3, 6) + "." + cpf.substring(6, 9) + "-" + cpf.substring(9, 11);
+        
+        return cpfFormatado;
     }
 
     @Override
